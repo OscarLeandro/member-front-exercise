@@ -1,0 +1,31 @@
+{
+  "name": "member-front-exercise",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.3",
+    "@heroicons/react": "^2.0.12",
+    "@tailwindcss/forms": "^0.5.3",
+    "axios": "^1.2.0",
+    "dotenv": "^16.0.3",
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.1",
+    "firebase": "^9.14.0",
+    "next": "13.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-query": "^3.39.2",
+    "sweetalert2": "^11.6.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1"
+  }
+}
