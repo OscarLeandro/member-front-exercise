@@ -17,8 +17,7 @@ const UserContextProvider = ({ children }) => {
     return response.json();
 }
 
-  const propsReactQuery = useQuery([KEY_USERS], () =>
-  getUsers('api/users')
+  const propsReactQuery = useQuery([KEY_USERS], () => getUsers('api/users')
 )
   return (
     <UserContext.Provider
