@@ -13,7 +13,6 @@ export default async function handler(req, res) {
     }
     try {
       const data = await getData('https://member-exercise.vercel.app/api/members')
-      console.log('DATA',data);
       res.status(200).json(data)
     } catch (error) {
       res.status(401).end();
@@ -24,7 +23,7 @@ export default async function handler(req, res) {
     
 
     async function postData(url='',body={}){
-      
+      console.log(body);
       const response = await fetch(url,{
         method:'POST',
         headers:{

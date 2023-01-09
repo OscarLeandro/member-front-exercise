@@ -1,6 +1,6 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import { directory, profile } from "../pages";
-import {useQuery, useMutation, queryClient} from 'react-query'
+import { createContext, useContext, useState } from "react";
+
+import {useQuery} from 'react-query'
 export const IndexContext = createContext()
 
 const IndexContextProvider = ({children}) => {

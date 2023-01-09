@@ -6,7 +6,6 @@ import PrivateRoute from '../../routes/PrivateRoute'
     return (
       <PrivateRoute>
         <LayoutDashboard />
-
       </PrivateRoute>
     )
   }

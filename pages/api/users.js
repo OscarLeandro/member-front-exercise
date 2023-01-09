@@ -12,13 +12,13 @@ export default async function handler(req, res) {
       return response.json();
     }
     try {
-      const data = await getUsers("https://member-exercise.vercel.app/api/users");
+      const data = await getUsers("http://localhost:8000/api/users");
       res.status(200).json(data);
     } catch (error) {
       res.status(401).end();
     }
   } else if (req.method === "POST") {
-    console.log('ahciendop un post')
+    console.log('ahciendop un post user')
     async function postUsers(url = "", body = {}) {
 
       const response = await fetch(url, {
@@ -33,8 +33,8 @@ export default async function handler(req, res) {
     }
 
     try {
-      const data = await postUsers("https://member-exercise.vercel.app/api/users", req.body);
-
+      const data = await postUsers("http://localhost:8000/api/users", req.body);
+      console.log('ESTE ES EL users DATA',data);
       res.status(201).json(data);
     } catch (error) {
       console.log(error);
@@ -42,3 +42,4 @@ export default async function handler(req, res) {
     }
   }
 }
+//https://member-exercise.vercel.app/api/users
